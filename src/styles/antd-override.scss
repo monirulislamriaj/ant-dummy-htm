@@ -1,0 +1,532 @@
+$primary-color: #72bf44;
+$secondary-color: #5B2192;
+$text-color: #757575;
+$text-color-dark: #212121;
+$white: #fff;
+$dark: #343a40;
+$dark-300: #495057;
+$border-color: #d3d3d3;
+$error-color: #ff5656;
+
+div.searchForm {
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  .ant-select,
+  .ant-picker {
+    height: 50px;
+
+    input {
+      height: 100% !important;
+    }
+  }
+
+  .ant-select-selector {
+    height: inherit !important;
+  }
+
+  .ant-calendar-picker-input.ant-input {
+    border-radius: 0px;
+    height: 53px;
+  }
+
+  .ant-select-arrow {
+    left: 11px;
+    top: 51%;
+    margin-top: -10px;
+  }
+
+  .ant-select-single.ant-select-show-arrow .ant-select-selection-item,
+  .ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder {
+    padding-right: 0;
+    padding-left: 18px;
+    line-height: 50px;
+  }
+
+}
+
+.ant-picker-suffix {
+  position: absolute;
+  left: -3px;
+  display: flex;
+  align-items: center;
+}
+
+.ant-picker-input {
+  padding-left: 22px;
+}
+
+.ant-select-selection-placeholder {
+  line-height: 50px !important;
+  padding-right: 0 !important;
+  padding-left: 18px !important;
+}
+
+.ant-select-single.ant-select-show-arrow .ant-select-selection-search {
+  right: auto !important;
+  left: 30px !important;
+}
+
+.ant-picker:hover,
+.ant-picker-focused .ant-picker-input>input:focus,
+.ant-picker-input>input-focused,
+.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  border-color: $primary-color !important;
+  box-shadow: none !important;
+}
+
+.ant-select:not(.ant-select-disabled):hover .ant-select-selector {
+  border-color: $primary-color !important;
+  border-right-width: 1px !important;
+}
+
+.ant-input {
+  padding: 10px 11px !important;
+}
+
+.ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+  height: 46px !important;
+}
+
+.ant-picker {
+  padding: 11px 11px 11px !important;
+  width: 100%;
+}
+
+// ant form
+.ant-picker-focused,
+.ant-input-number:focus,
+.ant-input-number-focused,
+.ant-input-number:hover {
+  border-color: $primary-color;
+  box-shadow: none;
+}
+
+.ant-form-item {
+  margin-bottom: 15px;
+}
+
+.ant-form-item label {
+  font-size: 12px;
+  color: $dark-300;
+  margin-bottom: 5px;
+}
+
+.ant-form-item input,
+.ant-picker-input input,
+.ant-input-number {
+  border-color: $border-color;
+  font-size: 14px;
+  color: $dark-300;
+}
+
+.ant-form-item input::placeholder,
+.ant-picker-input input::placeholder {
+  font-size: 14px;
+  color: $dark-300;
+}
+
+.ant-form-item input:focus {
+  border-color: $primary-color;
+  outline: 0;
+  box-shadow: none;
+}
+
+.ant-form-item input:hover {
+  border-color: $primary-color;
+}
+
+.ant-select-selector {
+  align-items: center;
+  display: flex;
+}
+
+.ant-switch-checked {
+  background-color: $primary-color;
+}
+
+.ant-radio-input:focus+.ant-radio-inner {
+  box-shadow: none;
+}
+
+.ant-radio-checked::after,
+.ant-radio-wrapper-checked input:focus,
+.ant-radio-wrapper-checked input:hover {
+  border-color: $secondary-color;
+}
+
+.ant-input-number-handler-wrap {
+  opacity: 1;
+}
+
+.ant-input-number-handler:hover .ant-input-number-handler-up-inner,
+.ant-input-number-handler:hover .ant-input-number-handler-down-inner {
+  color: $primary-color;
+}
+
+.ant-input-number {
+  width: 100%;
+}
+
+.ant-input-number input {
+  margin-bottom: 0;
+  padding: 22px 10px;
+}
+
+/* ant-custom-radio */
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: $secondary-color;
+  border-color: #d3d3d3;
+}
+
+.ant-radio-inner {
+  width: 12px;
+  height: 12px;
+  top: -1px;
+}
+
+.ant-radio-inner::after {
+  background-color: $secondary-color;
+  width: 8px;
+  height: 8px;
+  left: 1px;
+  top: 1px;
+}
+
+.ant-radio-wrapper:hover .ant-radio,
+.ant-radio:hover .ant-radio-inner,
+.ant-radio-input:focus+.ant-radio-inner,
+.ant-radio-checked .ant-radio-inner {
+  border-color: #d3d3d3;
+}
+
+
+/* ant-checkbox-wrapper */
+.ant-checkbox-wrapper {
+  display: inline-flex;
+  position: relative;
+  padding-left: 20px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: $secondary-color;
+  border-color: $secondary-color;
+}
+
+.ant-checkbox-wrapper:hover .ant-checkbox-inner,
+.ant-checkbox:hover .ant-checkbox-inner,
+.ant-checkbox-input:focus+.ant-checkbox-inner,
+.ant-checkbox-checked::after {
+  border-color: $secondary-color;
+}
+
+.ant-checkbox+span {
+  font-size: 12px;
+}
+
+
+/* ant-date picker */
+.ant-picker-input input {
+  margin: 0;
+}
+
+.ant-picker-date-panel .ant-picker-body {
+  padding: 0 12px;
+}
+
+.ant-picker-header {
+  padding: 12px 8px 10px;
+}
+
+.ant-picker-date-panel,
+.ant-picker-date-panel .ant-picker-content {
+  width: 100%;
+}
+
+.ant-picker-cell {
+  padding: 5px 8px;
+  border: 0;
+}
+
+.ant-picker-header,
+.ant-picker-panel .ant-picker-footer,
+.ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before {
+  border: 0;
+}
+
+.ant-picker-cell .ant-picker-cell-inner {
+  min-height: 35px;
+  width: 35px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.ant-picker-cell .ant-picker-cell-inner:hover {
+  background-color: #EEEEEE;
+}
+
+.ant-picker-header-prev-btn,
+.ant-picker-header-next-btn {
+  display: none;
+}
+
+.ant-picker-header>button {
+  background-color: #e7e7e7;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  color: $text-color-dark;
+  transition: .3s;
+  font-weight: 600;
+}
+
+.ant-picker-header>button:hover {
+  background-color: #EEEEEE;
+  color: $text-color-dark;
+}
+
+span.ant-picker-super-next-icon,
+.ant-picker-super-prev-icon {
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.ant-picker-super-prev-icon {
+  right: -18px;
+}
+
+span.ant-picker-super-next-icon {
+  left: -18px;
+}
+
+
+.ant-picker-cell-today .ant-picker-cell-inner {
+  background: $secondary-color;
+  color: $white;
+}
+
+.ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner {
+  background: $primary-color;
+  color: $white;
+}
+
+.ant-picker-cell .ant-picker-cell-inner,
+.ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner {
+  border-radius: 50%;
+}
+
+.ant-picker-content th:nth-child(6),
+.ant-picker-content td:nth-child(6) {
+  color: $error-color;
+}
+
+.ant-picker-content th {
+  font-weight: 600;
+  color: $secondary-color;
+}
+
+.ant-picker-today-btn,
+.ant-picker-header-view button {
+  font-weight: 600;
+  color: $text-color-dark;
+}
+
+.ant-picker-today-btn:hover,
+.ant-picker-header-view button:hover {
+  color: $secondary-color;
+}
+
+
+@media (max-width: 575px) {
+  .ant-picker-cell,
+  .ant-picker-date-panel .ant-picker-content th {
+    padding: 0;
+  }
+
+  .ant-picker-cell .ant-picker-cell-inner {
+    font-size: 13px;
+  }
+
+  .ant-picker-date-panel .ant-picker-body {
+    padding: 0 6px;
+  }
+}
+
+
+
+// ================ launch ================
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn,
+.ant-tabs-tab:hover,
+.ant-tabs-tab-btn:focus,
+.ant-tabs-tab-remove:focus,
+.ant-tabs-tab-btn:active,
+.ant-tabs-tab-remove:active {
+  color: $primary-color;
+}
+
+.ant-tabs-tab {
+  padding: 12px 13px;
+}
+
+.ant-tabs-top>.ant-tabs-nav::before,
+.ant-tabs-bottom>.ant-tabs-nav::before,
+.ant-tabs-top>div>.ant-tabs-nav::before,
+.ant-tabs-bottom>div>.ant-tabs-nav::before {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.ant-tabs-ink-bar {
+  background: $primary-color;
+}
+
+.ant-collapse-ghost>.ant-collapse-item {
+  border: 1px solid $border-color;
+  margin-bottom: 20px;
+}
+
+.ant-collapse-content.ant-collapse-content-active {
+  border-top: 1px solid $border-color !important;
+}
+
+.faq-item-content .h6 {
+  margin-bottom: 14px;
+}
+
+.faq-item-content a:hover,
+.faq-item-content a {
+  color: $primary-color;
+}
+
+.faq-item-content ol:not(:last-child) {
+  padding-bottom: 20px;
+}
+
+.faq-item-content ol li {
+  color: $text-color;
+  font-size: 13px;
+}
+
+
+// ================ bus ================ //
+
+.ant-select-selector span,
+.ant-picker-input input,
+.ant-picker-input input::placeholder {
+  color: $text-color-dark;
+}
+
+.ant-select-arrow svg,
+.ant-picker-suffix svg {
+  fill: #212121;
+}
+
+
+// ant-pagination
+.ant-pagination-prev .ant-pagination-item-link,
+.ant-pagination-next .ant-pagination-item-link {
+  border: 0;
+}
+
+.ant-pagination-prev:hover .ant-pagination-item-link,
+.ant-pagination-next:hover .ant-pagination-item-link {
+  color: $primary-color;
+  border-color: $primary-color;
+}
+
+.ant-pagination-item-active,
+.ant-pagination-item:hover {
+  background: $primary-color;
+  border-radius: 4px;
+  border-color: $primary-color;
+}
+
+.ant-pagination-item a {
+  color: $primary-color;
+}
+
+.ant-pagination-item {
+  border-color: $primary-color;
+  min-width: 25px;
+  height: 25px;
+  line-height: 25px;
+  display: inline-table;
+
+}
+
+.ant-pagination-item-active a,
+.ant-pagination-item a:hover {
+  color: $white;
+}
+
+// ================ air ================ //
+
+// button
+.ant-btn {
+  border-radius: 3px;
+  border-color: transparent;
+}
+
+
+.ant-btn-outline {
+  border: 2px solid $border-color;
+}
+
+.ant-btn-outline-secondary {
+  border: 2px solid $secondary-color;
+  color: $secondary-color;
+}
+
+.ant-btn-outline-secondary:hover,
+.ant-btn-outline-secondary:focus,
+.ant-btn-outline-secondary:active {
+  background: $secondary-color;
+  color: $white;
+  border-color: transparent;
+}
+
+.ant-btn-secondary {
+  background-color: $secondary-color;
+  color: $white;
+}
+
+.ant-btn-secondary:hover,
+.ant-btn-secondary:focus {
+  color: $white;
+  border-color: transparent;
+  border-color: lighten($color: $secondary-color, $amount: 10);
+  background: lighten($color: $secondary-color, $amount: 10);
+}
+
+
+.ant-btn-outline-primary {
+  border: 2px solid $primary-color;
+  color: $primary-color;
+}
+
+.ant-btn-outline-primary:hover,
+.ant-btn-outline-primary:focus,
+.ant-btn-outline-primary:active {
+  background: $primary-color;
+  color: $white;
+  border-color: transparent;
+}
+
+.ant-btn-primary {
+  background-color: $primary-color;
+  color: $white;
+}
+
+.ant-btn-primary:hover,
+.ant-btn-primary:focus {
+  color: $white;
+  border-color: transparent;
+  border-color: lighten($color: $primary-color, $amount: 10);
+  background: lighten($color: $primary-color, $amount: 10);
+}
